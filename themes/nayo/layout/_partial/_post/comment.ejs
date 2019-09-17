@@ -21,7 +21,7 @@
 
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 
-    <script src='//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js'></script>
+    <script src="//unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
 
     <script>
         new Valine({
@@ -30,6 +30,7 @@
             verify: false,
             app_id: '<%- theme.leancloud.app_id %>',
             app_key: '<%- theme.leancloud.app_key %>',
+            placeholder: '<%- theme.leancloud.placeholder %>',
             path: window.location.pathname,
             avatar: 'mm',
             guest_info: ['nick', 'mail']
